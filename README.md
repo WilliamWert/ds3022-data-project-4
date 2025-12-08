@@ -14,7 +14,17 @@ Set up an event-driven data pipeline using Amazon S3, Lambda, DynamoDB, and the 
 
 [Source Template](dp4-launch-template.yaml)
 
-This assumes that users have an active set of AWS credentials installed locally.
+This assumes that users have an active set of AWS credentials installed locally. **Be sure that your AWS command-line keys correlate to the account you use to sign into the AWS Console.**
+
+GitHub Codespaces can be used for this project, but the AWS CLI and your keys must be installed:
+
+```
+$ sudo pip install awscli
+```
+Then configure the CLI with your keys with this command:
+```
+$ aws configure
+```
 
 ![Overview Image](architecture.png)
 
